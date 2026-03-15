@@ -102,6 +102,43 @@ code {
   margin-top: 0;
 }
 
+.navbar {
+  background: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+.navbar-container {
+  max-width: 1000px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #f5d742;
+}
+
 @media (max-width: 700px) {
 
   .card{
@@ -112,6 +149,11 @@ code {
 
   .imagecard{
     width: 250px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 10px;
   }
 
 }
